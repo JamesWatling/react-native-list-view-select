@@ -20,7 +20,7 @@ The properties that this component accepts are
 ## Screenshots
 Here is the List View Select used in the real world for an application I built 
 
-![](http://i.imgur.com/sNXjuvm.gif)
+![](http://i.imgur.com/76iFV7n.gif)
 
 Here is a quick gif of it in use, excuse the resolution
 ![](http://i.imgur.com/yzgYcNG.gif)
