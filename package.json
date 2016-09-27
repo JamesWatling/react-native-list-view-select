@@ -1,0 +1,28 @@
+{
+  "name": "react-native-list-view-select",
+  "version": "1.0.0",
+  "description": "React Native component to render a list view as a selectable list",
+  "main": "ListViewSelect.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JamesWatling/react-native-list-view-select.git"
+  },
+  "keywords": [
+    "list",
+    "list View",
+    "selectable",
+    "select",
+    "dropdown",
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "modal"
+  ],
+  "author": "James Watling <watling.james@gmail.com> @jameswatling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JamesWatling/react-native-list-view-select/issues"
+  },
+  "homepage": "https://github.com/JamesWatling/react-native-list-view-select"
+}
