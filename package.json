@@ -1,6 +1,6 @@
 {
   "name": "react-native-list-view-select",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native component to render a list view as a selectable list",
   "main": "ListViewSelect.js",
   "repository": {
