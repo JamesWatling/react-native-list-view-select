@@ -47,14 +47,18 @@ export default class ListViewSelect extends Component {
     this.props.onClose();
   }
 
-  renderRow(rowData) {
+  renderSeparator(data) {
     const separatorStyle = this.props.separatorStyle || DefaultStyles.separator;
-    const rowTextStyle = this.props.rowText || DefaultStyles.rowText;
 
-    let separator = <View style={separatorStyle} />;
-    if (rowData === this.props.list[0]) {
-      separator = null;
+    if (data === this.props.list[0]) {
+      return null;
     }
+
+    return <View style={separatorStyle} />;
+  }
+
+  renderRow(rowData) {
+    const rowTextStyle = this.props.rowText || DefaultStyles.rowText;
 
     let row = <Text style={rowTextStyle}>{rowData}</Text>;
     if (this.props.renderRow) {
@@ -63,7 +67,7 @@ export default class ListViewSelect extends Component {
 
     return (
       <View>
-        {separator}
+        {this.renderSeparator(rowData)}
         <TouchableOpacity onPress={() => this.handleClick(rowData)}>
           {row}
         </TouchableOpacity>
@@ -76,6 +80,7 @@ export default class ListViewSelect extends Component {
     if (this.props.list.length > 12 && !this.props.height) {
       maxHeight = { height: SCREEN_HEIGHT * 3 / 4 };
     }
+
     return (
       <ListView
         style={maxHeight}
@@ -101,10 +106,10 @@ export default class ListViewSelect extends Component {
         </TouchableOpacity>
       );
     }
+
     return <View />;
   }
 };
-
 
 const DefaultStyles = StyleSheet.create({
   container: {
@@ -127,8 +132,7 @@ const DefaultStyles = StyleSheet.create({
   },
   separator: {
     height: 0.5,
-    marginLeft: 8,
-    marginRight: 8,
+    marginHorizontal: 8,
     backgroundColor: '#CCC',
   },
 });
