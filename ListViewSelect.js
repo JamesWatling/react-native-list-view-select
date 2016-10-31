@@ -11,7 +11,7 @@ import {
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 const noop = () => {};
-const ds = new ListView.DataSource({rowHasChanged: (r1,r2)=>(r1!==r2)});
+const ds = new ListView.DataSource({ rowHasChanged: (r1,r2) => (r1 !== r2) });
 
 export default class ListViewSelect extends Component {
 
@@ -23,7 +23,7 @@ export default class ListViewSelect extends Component {
   }
 
   static defaultProps: {
-    list: [""],
+    list: [''],
     isVisible: false,
     onClick: noop,
     onClose: noop
