@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {
   ListView,
-  PropTypes,
   StyleSheet,
   Text,
   Dimensions,
   TouchableOpacity,
   View,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 const noop = () => {};
