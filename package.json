@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/JamesWatling/react-native-list-view-select/issues"
   },
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  },
   "homepage": "https://github.com/JamesWatling/react-native-list-view-select"
 }
