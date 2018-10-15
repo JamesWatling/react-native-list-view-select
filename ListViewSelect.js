@@ -26,7 +26,7 @@ export default class ListViewSelect extends Component {
     list: [''],
     isVisible: false,
     onClick: noop,
-    onClose: noop
+    onClose: noop,
   }
 
   constructor(props) {
@@ -53,7 +53,6 @@ export default class ListViewSelect extends Component {
     if (data === this.props.list[0]) {
       return null;
     }
-
     return <View style={separatorStyle} />;
   }
 
@@ -106,7 +105,6 @@ export default class ListViewSelect extends Component {
         </TouchableOpacity>
       );
     }
-
     return <View />;
   }
 };
